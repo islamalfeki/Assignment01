@@ -212,8 +212,8 @@ namespace Assignment01
 
 
             //null انى متأكد ان القيمة مش ب  compiler  لما بستخدم ! بقول لل 
-            string? name = "Ahmed";
-            string confirmedName = name!;
+            //string? name = "Ahmed";
+            //string confirmedName = name!;
 
             #endregion
         }
