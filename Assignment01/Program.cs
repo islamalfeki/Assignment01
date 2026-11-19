@@ -159,22 +159,31 @@ namespace Assignment01
             #endregion
 
             #region Question12
-            //  Declare a string? reviewer = null;. Print whether it is null
+            ////  Declare a string? reviewer = null;. Print whether it is null
 
-            string? reviewer = null;
+            //string? reviewer = null;
 
-            if (reviewer == null)
-            {
-                Console.WriteLine("reviewer is null");
-            }
-            else {
-                Console.WriteLine(reviewer);
-            }
+            //if (reviewer == null)
+            //{
+            //    Console.WriteLine("reviewer is null");
+            //}
+            //else {
+            //    Console.WriteLine(reviewer);
+            //}
 
 
-            // another solution
-            // using is null and it gives you true or false
-            Console.WriteLine(reviewer is null);
+            //// another solution
+            //// using is null and it gives you true or false
+            //Console.WriteLine(reviewer is null);
+
+            #endregion
+
+            #region Question13
+            // Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and
+            //print the result.
+
+            Book? book = null;
+            Console.WriteLine(book?.Title);
 
             #endregion
         }
