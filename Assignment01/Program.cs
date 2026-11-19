@@ -1,4 +1,7 @@
-﻿namespace Assignment01
+﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
+
+namespace Assignment01
 {
     internal class Program
     {
@@ -87,12 +90,35 @@
             #endregion
 
             #region Question07
-            // Given string pagesText = "464";, convert it into an int using the Convert class.
+            //// Given string pagesText = "464";, convert it into an int using the Convert class.
 
-            string pagesText = "464";
-            int pagesNumber = Convert.ToInt32(pagesText);
+            //string pagesText = "464";
+            //int pagesNumber = Convert.ToInt32(pagesText);
 
-            Console.WriteLine(pagesNumber);
+            //Console.WriteLine(pagesNumber);
+            #endregion
+
+            #region Question08 
+            // Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
+            //use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+
+            string yearText = "2023";
+            int year = int.Parse(yearText);
+            Console.WriteLine(year);
+
+
+            string badText = "abc";
+            // TryParse => bool 
+            if (int.TryParse(badText, out int result)) {
+
+            Console.WriteLine(result);
+
+            }
+            else {
+                Console.WriteLine("Invalid number");
+            }
+
+
             #endregion
         }
     }
