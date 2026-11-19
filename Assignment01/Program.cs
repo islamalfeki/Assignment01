@@ -134,15 +134,28 @@ namespace Assignment01
             #endregion
 
             #region Question10
-            //  Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
-            //  variable, and print both.
+            ////  Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
+            ////  variable, and print both.
 
-            int copies = 100;
-            object i = copies;  // Boxing (Implicit)
-            int j = (int) i;    // Unboxing (Explicit)
+            //int copies = 100;
+            //object i = copies;  // Boxing (Implicit)
+            //int j = (int) i;    // Unboxing (Explicit)
 
-            Console.WriteLine(i);
-            Console.WriteLine(j);
+            //Console.WriteLine(i);
+            //Console.WriteLine(j);
+            #endregion
+
+            #region Question11
+            // Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
+
+
+            int? year = null;
+            // I searched to get whether it has a value or not and I found HasValue attribute for int class and it gives bool
+            Console.WriteLine(year.HasValue);
+
+            year = 2023;
+            Console.WriteLine(year);
+
             #endregion
         }
     }
