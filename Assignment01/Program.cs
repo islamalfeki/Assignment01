@@ -146,15 +146,35 @@ namespace Assignment01
             #endregion
 
             #region Question11
-            // Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
+            //// Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
 
 
-            int? year = null;
-            // I searched to get whether it has a value or not and I found HasValue attribute for int class and it gives bool
-            Console.WriteLine(year.HasValue);
+            //int? year = null;
+            //// I searched to get whether it has a value or not and I found HasValue attribute for int class and it gives bool
+            //Console.WriteLine(year.HasValue);
 
-            year = 2023;
-            Console.WriteLine(year);
+            //year = 2023;
+            //Console.WriteLine(year);
+
+            #endregion
+
+            #region Question12
+            //  Declare a string? reviewer = null;. Print whether it is null
+
+            string? reviewer = null;
+
+            if (reviewer == null)
+            {
+                Console.WriteLine("reviewer is null");
+            }
+            else {
+                Console.WriteLine(reviewer);
+            }
+
+
+            // another solution
+            // using is null and it gives you true or false
+            Console.WriteLine(reviewer is null);
 
             #endregion
         }
