@@ -179,11 +179,29 @@ namespace Assignment01
             #endregion
 
             #region Question13
-            // Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and
-            //print the result.
+            //// Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and
+            ////print the result.
+
+            //Book? book = null;
+            //Console.WriteLine(book?.Title);
+
+            #endregion
+
+            #region Question14 
+            // Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??= to
+            // assign title the value "Untitled" only if it's still null.
+
+            //null بحثت عن ال ?? و =?? وفهمت انهم بيشتغلوا مع القيم اللى ممكن تبقا 
+            //null وفهمت ان ?? بتنفذ اللى بعدها لو القيمه ب 
+            //بتسيبه زى ما هوا null بتدى المتغير نفسه القيمه اللى بعدها ولو مش  null و=?? لو المتغير ب  
+            // يعنى ؟؟ بتنفذ اللى بعدها بس انما ؟؟= بتدى المتغير نفسه القيمة اللى بعدها
 
             Book? book = null;
-            Console.WriteLine(book?.Title);
+            Console.WriteLine(book?.Title  ?? "Untitled");
+
+            String? title = book?.Title;
+            title ??= "Untitled";
+            Console.WriteLine(title);
 
             #endregion
         }
