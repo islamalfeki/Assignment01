@@ -70,11 +70,20 @@
             #endregion
 
             #region Question05
-            //  Declare an int pages = 300; then store it in a double variable without using a cast.
+            ////  Declare an int pages = 300; then store it in a double variable without using a cast.
 
-            int pages = 300;
-            double x = pages;
+            //int pages = 300;
+            //double x = pages;
 
+            #endregion
+
+            #region Question06
+            // Declare a double price = 49.99; then convert it into an int using a cast.
+
+            double price = 49.99;
+            int d = (int) price;     // Explicit Casting
+
+            Console.WriteLine(d);
             #endregion
         }
     }
