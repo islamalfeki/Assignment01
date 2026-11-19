@@ -99,25 +99,37 @@ namespace Assignment01
             #endregion
 
             #region Question08 
-            // Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
-            //use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            //// Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
+            ////use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
 
-            string yearText = "2023";
-            int year = int.Parse(yearText);
-            Console.WriteLine(year);
+            //string yearText = "2023";
+            //int year = int.Parse(yearText);
+            //Console.WriteLine(year);
 
 
-            string badText = "abc";
-            // TryParse => bool 
-            if (int.TryParse(badText, out int result)) {
+            //string badText = "abc";
+            //// TryParse => bool 
+            //if (int.TryParse(badText, out int result)) {
 
-            Console.WriteLine(result);
+            //Console.WriteLine(result);
 
-            }
-            else {
-                Console.WriteLine("Invalid number");
-            }
+            //}
+            //else {
 
+            // Console.WriteLine("Invalid number");
+            //}
+
+
+            #endregion
+
+            #region Question09 
+            // Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()
+            //to prove it's now a string.
+
+            int pages = 464;
+            string pagesText = pages.ToString();
+
+            Console.WriteLine(pagesText.GetType());
 
             #endregion
         }
