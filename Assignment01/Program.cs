@@ -196,12 +196,24 @@ namespace Assignment01
             //بتسيبه زى ما هوا null بتدى المتغير نفسه القيمه اللى بعدها ولو مش  null و=?? لو المتغير ب  
             // يعنى ؟؟ بتنفذ اللى بعدها بس انما ؟؟= بتدى المتغير نفسه القيمة اللى بعدها
 
-            Book? book = null;
-            Console.WriteLine(book?.Title  ?? "Untitled");
+            //Book? book = null;
+            //Console.WriteLine(book?.Title  ?? "Untitled");
 
-            String? title = book?.Title;
-            title ??= "Untitled";
-            Console.WriteLine(title);
+            //String? title = book?.Title;
+            //title ??= "Untitled";
+            //Console.WriteLine(title);
+
+            #endregion
+
+            #region Question15
+            // Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable string
+            //confirmedName using the ! operator
+
+
+
+            //null انى متأكد ان القيمة مش ب  compiler  لما بستخدم ! بقول لل 
+            string? name = "Ahmed";
+            string confirmedName = name!;
 
             #endregion
         }
