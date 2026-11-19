@@ -41,13 +41,32 @@
             #endregion
 
             #region Question03
-            // Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
-            //int pages = "464";
+            //// Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
+            ////int pages = "464";
 
 
-            // Answer
-            // it is a compile-Time error => syntax error
-            int pages = 464 ;
+            //// Answer
+            //// it is a compile-Time error => syntax error
+            //int pages = 464 ;
+            #endregion
+
+            #region Question04
+            //  Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
+            //zero", and then prints "Done" in a finally block.
+
+            try {
+                int x = 10;
+                int y = 0;
+                int z = x / y; 
+            } 
+            catch (Exception) {
+
+                Console.WriteLine("Cannot divide by zero");
+            }
+            finally {
+                Console.WriteLine("Done");
+            };
+
             #endregion
         }
     }
